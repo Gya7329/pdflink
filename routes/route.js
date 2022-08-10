@@ -9,7 +9,7 @@ router.post("/api/v2/upload/file",uploadMedia.single('file'),async(req,res)=>{
         const AWSCredentials = {
             accessKey: process.env.accessKey,
             secret: process.env.secret,
-            bucketName: 'awsbucket-project'
+            bucketName: 'viosa-storage'
         };
 
         const s3 = new AWS.S3({
