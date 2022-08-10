@@ -7,8 +7,8 @@ router.post("/api/v2/upload/file",uploadMedia.single('file'),async(req,res)=>{
         const fs = require('fs');
 
         const AWSCredentials = {
-            accessKey: process.env.accessKey,
-            secret: process.env.secret,
+            accessKey: "AKIAY2Q7TG4JKJ2FLQMV",
+            secret: "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",
             bucketName: 'viosa-storage'
         };
 
